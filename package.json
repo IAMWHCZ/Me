@@ -15,6 +15,7 @@
       "path": "./node_modules/cz-git"
     }
   },
+  "type": "module",
   "keywords": [],
   "author": "Zhuo Cheng",
   "license": "MIT",
