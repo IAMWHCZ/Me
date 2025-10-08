@@ -1,0 +1,169 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "allowCompoundWords": true,
+  "dictionaries": [
+    "en_US",
+    "softwareTerms",
+    "typescript",
+    "node",
+    "html",
+    "css",
+    "bash",
+    "npm",
+    "companies",
+    "project-terms"
+  ],
+  "dictionaryDefinitions": [
+    {
+      "name": "project-terms",
+      "path": "./.cspell/project-words.txt",
+      "addWords": true
+    }
+  ],
+  "words": [
+    "codegen",
+    "commitlint",
+    "cz",
+    "esbuild",
+    "eslint",
+    "eslintrc",
+    "globals",
+    "hookform",
+    "jsdoc",
+    "lintstagedrc",
+    "nextjs",
+    "nodenext",
+    "pnpm",
+    "prettierrc",
+    "reacthook",
+    "rehype",
+    "remark",
+    "tailwindcss",
+    "tsconfig",
+    "tseslint",
+    "typecheck",
+    "unplugin",
+    "vite",
+    "vitepress",
+    "vscode",
+    "webapp",
+    "workspaces",
+    "zod"
+  ],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/public/**",
+    "**/coverage/**",
+    "**/.git/**",
+    "**/.vscode/**",
+    "**/.idea/**",
+    "**/.*.json",
+    "**/*.lock",
+    "**/*.min.js",
+    "**/*.min.css",
+    "**/package.json",
+    "**/pnpm-lock.yaml",
+    "**/yarn.lock",
+    "**/package-lock.json",
+    "**/tsconfig.json",
+    "**/tsconfig.*.json",
+    "**/eslint.config.*",
+    "**/prettier.config.*",
+    "**/tailwind.config.*",
+    "**/postcss.config.*",
+    "**/vite.config.*",
+    "**/next.config.*",
+    "**/nuxt.config.*",
+    "**/webpack.config.*",
+    "**/rollup.config.*",
+    "**/babel.config.*",
+    "**/jest.config.*",
+    "**/vitest.config.*",
+    "**/cspell.json",
+    "**/.gitignore",
+    "**/.npmignore",
+    "**/.prettierignore",
+    "**/CHANGELOG.md",
+    "**/LICENSE",
+    "**/yarn-error.log"
+  ],
+  "ignoreRegExpList": [
+    "/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g", // UUID
+    "/#[0-9a-f]{3,6}/gi", // 颜色代码
+    "/\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}\\b/gi", // 电子邮件
+    "/https?:\\/\\/[^\\s]+/g", // URL
+    "/\\b[A-Z]{2,}\\b/g", // 大写缩写
+    "/\\b[a-z0-9-]+-[a-z0-9-]+\\b/g", // 连字符连接的词
+    "/\\b[a-z]+[A-Z][a-z]+\\b/g" // 驼峰命名
+  ],
+  "enableFiletypes": [
+    "typescript",
+    "typescriptreact",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "markdown",
+    "mdx",
+    "yaml",
+    "yml",
+    "css",
+    "scss",
+    "less",
+    "html",
+    "vue",
+    "svelte",
+    "astro",
+    "tsx",
+    "jsx"
+  ],
+  "caseSensitive": false,
+  "noSuggestDictionaries": [
+    "companies"
+  ],
+  "useGitignore": true,
+  "flagWords": [
+    "hte",
+    "teh",
+    "recieve",
+    "seperate",
+    "occured",
+    "occurence",
+    "definately",
+    "existance",
+    "recieved",
+    "publically",
+    "independant"
+  ],
+  "patterns": [
+    {
+      "name": "camelCase",
+      "pattern": "/\\b[a-z][a-zA-Z0-9]*\\b/g"
+    },
+    {
+      "name": "PascalCase",
+      "pattern": "/\\b[A-Z][a-zA-Z0-9]*\\b/g"
+    },
+    {
+      "name": "snake_case",
+      "pattern": "/\\b[a-z][a-z0-9_]*\\b/g"
+    },
+    {
+      "name": "kebab-case",
+      "pattern": "/\\b[a-z][a-z0-9-]*\\b/g"
+    }
+  ],
+  "suggestWords": [
+    "colour",
+    "grey",
+    "centre",
+    "organise",
+    "realise",
+    "analyse",
+    "optimise",
+    "customise"
+  ]
+}
