@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "buildOptions": {
+    "name": "Components",
+    "format": "esm"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

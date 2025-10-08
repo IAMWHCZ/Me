@@ -121,9 +121,7 @@
     "jsx"
   ],
   "caseSensitive": false,
-  "noSuggestDictionaries": [
-    "companies"
-  ],
+  "noSuggestDictionaries": ["companies"],
   "useGitignore": true,
   "flagWords": [
     "hte",
@@ -156,14 +154,5 @@
       "pattern": "/\\b[a-z][a-z0-9-]*\\b/g"
     }
   ],
-  "suggestWords": [
-    "colour",
-    "grey",
-    "centre",
-    "organise",
-    "realise",
-    "analyse",
-    "optimise",
-    "customise"
-  ]
+  "suggestWords": ["colour", "grey", "centre", "organise", "realise", "analyse", "optimise", "customise"]
 }

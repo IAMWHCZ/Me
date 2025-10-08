@@ -7,8 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint:prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,less,html,md,cjs,mjs}\"",
     "lint:eslint": "eslint --fix \"**/*.{js,jsx,ts,tsx}\"",
-    "lint:spell": "cspell \"**/*.{js,jsx,ts,tsx,json,css,scss,less,html,md,cjs,mjs}\"",
-    "commit": "git-cz"
+    "lint:spellcheck": "cspell \"**/*.{js,jsx,ts,tsx,json,css,scss,less,html,md,cjs,mjs}\"",
+    "commit": "git-cz",
+    "prepare": "husky",
+    "precommit": "lint-staged",
+    "build": "tsx scripts/node/build.ts",
+    "dev": "tsx scripts/node/dev.ts",
+    "build:package": "tsx scripts/node/build.ts",
+    "dev:package": "tsx scripts/node/dev.ts",
+    "clear": "tsx scripts/node/clear.ts"
   },
   "config": {
     "commitizen": {
@@ -46,8 +53,12 @@
     "eslint-plugin-sonarjs": "^3.0.5",
     "eslint-plugin-unicorn": "^61.0.2",
     "globals": "^16.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.3",
     "prettier": "^3.6.2",
-    "typescipt": "^1.0.0",
+    "rolldown": "1.0.0-beta.42",
+    "tsx": "^4.20.6",
+    "typescript": "^5.0.0",
     "typescript-eslint": "^8.46.0"
   }
 }
