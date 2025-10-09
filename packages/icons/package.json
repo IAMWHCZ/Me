@@ -1,0 +1,30 @@
+{
+  "name": "@me/icons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.ts",
+  "scripts": {
+    "dev": "pnpm run clean && pnpm build:svg",
+    "dev:watch": "pnpm run build -- --watch",
+    "build": "pnpm run clean && pnpm build:svg",
+    "build:svg": "svgr --config-file svgr.config.js --out-dir dist src",
+    "clean": "rimraf dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.15.1",
+  "peerDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^8.1.0",
+    "rimraf": "^5.0.5"
+  },
+  "dependencies": {
+    "lucide-react": "^0.545.0"
+  }
+}

@@ -1,8 +1,9 @@
-dist
-public
-.local
-node_modules
+.snapshots/
+build/
+dist/
+node_modules/
+
+.demo/
+.renderer/
 pnpm-lock.yaml
-.idea
-.github
-docs
+pnpm-workspace.yaml

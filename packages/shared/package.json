@@ -1,21 +1,17 @@
 {
-  "name": "@cz/utils",
+  "name": "@me/shared",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
-  "buildOptions": {
-    "name": "Utils",
-    "format": [
-      "esm",
-      "cjs",
-      "iife"
-    ]
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "packageManager": "pnpm@10.15.1",
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.6.0"
+  }
 }
