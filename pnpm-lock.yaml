@@ -87,7 +87,17 @@ importers:
         specifier: ^8.46.0
         version: 8.46.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
 
-  packages/components: {}
+  packages/components:
+    devDependencies:
+      '@cz/utils':
+        specifier: workspace:*
+        version: link:../utils
+      '@types/node':
+        specifier: ^24.7.0
+        version: 24.7.0
+      typescript:
+        specifier: ^5.0.0
+        version: 5.9.3
 
   packages/utils: {}
 

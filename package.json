@@ -15,7 +15,8 @@
     "dev": "tsx scripts/node/dev.ts",
     "build:package": "tsx scripts/node/build.ts",
     "dev:package": "tsx scripts/node/dev.ts",
-    "clear": "tsx scripts/node/clear.ts"
+    "clear": "tsx scripts/node/clear.ts",
+    "install:all": "pnpm install"
   },
   "config": {
     "commitizen": {

@@ -3,9 +3,13 @@ import js from '@eslint/js'
 import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
+import reactPlugin from 'eslint-plugin-react'
 import tseslint from 'typescript-eslint'
 import prettierConfig from 'eslint-config-prettier'
 import prettierPlugin from 'eslint-plugin-prettier'
+import unicornPlugin from 'eslint-plugin-unicorn'
+import jsxAccessibility from 'eslint-plugin-jsx-a11y'
+import sonarjs from 'eslint-plugin-sonarjs'
 
 const ignores = ['**/node_modules/**', '**/dist/**', '**/public/**']
 
@@ -15,7 +19,11 @@ export default tseslint.config({
   plugins: {
     'react-hooks': reactHooks,
     'react-refresh': reactRefresh,
-    prettier: prettierPlugin
+    react: reactPlugin,
+    prettier: prettierPlugin,
+    unicorn: unicornPlugin,
+    'jsx-a11y': jsxAccessibility,
+    sonarjs: sonarjs
   },
   languageOptions: {
     globals: {
@@ -24,7 +32,14 @@ export default tseslint.config({
     },
     ecmaVersion: 'latest',
     sourceType: 'module',
-    parser: tseslint.parser
+    parser: tseslint.parser,
+    parserOptions: {
+      project: true,
+      tsconfigRootDir: __dirname,
+      ecmaFeatures: {
+        jsx: true
+      }
+    }
   },
   rules: {
     'no-var': 'error', // 禁止使用 var，使用 let 或 const 代替
@@ -54,10 +69,9 @@ export default tseslint.config({
     'react/require-render-return': 'error', // 要求 render 方法必须有返回值
     'react/no-this-in-sfc': 'error', // 禁止在无状态函数组件中使用 this
     'react/no-typos': 'error', // 防止在 React 组件中拼写错误
-    'react/destructuring-assignment': ['warn', { destructureInSignature: 'always' }], // 建议使用解构赋值
+    'react/destructuring-assignment': 'warn', // 建议使用解构赋值
 
     // React Hooks 规则
-    ...reactHooks, // 应用 react-hooks 插件的所有规则
     'react-hooks/rules-of-hooks': 'error', // 强制执行 Hooks 规则
     'react-hooks/exhaustive-deps': 'warn', // 警告 useEffect 等钩子的依赖项不完整
 
@@ -111,9 +125,7 @@ export default tseslint.config({
     'sonarjs/no-redundant-boolean': 'error', // 禁止冗余的布尔值
     'sonarjs/no-redundant-jump': 'error', // 禁止冗余的跳转语句
     'sonarjs/no-same-line-conditional': 'error', // 禁止在同一行使用条件语句
-    'sonarjs/no-unused-import': 'error', // 禁止未使用的导入
     'sonarjs/prefer-immediate-return': 'warn', // 建议立即返回而不是赋值后返回
-    'sonarjs/prefer-object-spread': 'error', // 使用对象展开而不是 Object.assign
 
     // 现代JavaScript规则 (unicorn)
     'unicorn/better-regex': 'error', // 强制使用更好的正则表达式
@@ -200,7 +212,6 @@ export default tseslint.config({
     'unicorn/prefer-ternary': 'error', // 建议使用三元表达式而不是简单的 if-else
     'unicorn/prefer-top-level-await': 'error', // 建议使用顶层 await
     'unicorn/prefer-type-error': 'error', // 建议抛出 TypeError 而不是 Error
-    'unicorn/prefer-url-search-params': 'error', // 建议使用 URLSearchParams 而不是字符串操作
     'unicorn/relative-url-style': 'error', // 强制使用一致的相对 URL 样式
     'unicorn/require-array-join-separator': 'error', // 要求 array.join() 提供分隔符
     'unicorn/require-number-to-fixed-digits-argument': 'error', // 要求 toFixed() 提供数字参数

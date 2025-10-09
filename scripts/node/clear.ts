@@ -1,10 +1,10 @@
-#!/usr/bin/env node
-
 import path from 'node:path'
 import fs from 'fs'
 import { getPackageRoot } from './buildBase'
 
 async function clearPackages() {
+  console.clear()
+
   const packageRoots = getPackageRoot()
 
   console.log('🧹 Cleaning up built files...')
@@ -32,7 +32,6 @@ async function clearPackages() {
       }
     }
   }
-
   console.log('🎉 All built files have been cleared!')
 }
 

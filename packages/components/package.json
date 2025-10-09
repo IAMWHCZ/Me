@@ -6,12 +6,20 @@
   "type": "module",
   "buildOptions": {
     "name": "Components",
-    "format": "esm"
+    "format": [
+      "esm",
+      "cjs"
+    ]
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.7.0",
+    "typescript": "^5.0.0",
+    "@cz/utils": "workspace:*"
+  }
 }

@@ -1,7 +1,7 @@
 import path from 'node:path'
 import fs from 'fs'
 import { fileURLToPath } from 'url'
-import { ConfigExport } from 'rolldown'
+import { ConfigExport, OutputOptions } from 'rolldown'
 
 const __filename = fileURLToPath(import.meta.url)
 
@@ -21,19 +21,28 @@ async function getPackageJsonAsync(root: string) {
   return content
 }
 
-async function getRolldownConfigAsync(root: string): Promise<ConfigExport> {
+async function getRolldownConfigAsync(root: string, format?: string): Promise<ConfigExport> {
   const packageJson = await getPackageJsonAsync(root)
-  const { name, format = 'esm' } = packageJson.buildOptions || {}
+  const { name, format: packageFormat = 'esm' } = packageJson.buildOptions || {}
   const dist = path.resolve(root, './dist')
   const entry = path.resolve(root, './src/index.ts')
 
+  // Use the provided format or fall back to the package format
+  const buildFormat = format || packageFormat
+
+  // Create format-specific subdirectory
+  const formatDir = path.resolve(dist, buildFormat)
+
+  // Check if this is the utils package (no React dependencies)
+  const isUtilsPackage = path.basename(root) === 'utils'
+
   const rolldownOptions: ConfigExport = {
     input: entry,
-    external: ['react'],
+    external: isUtilsPackage ? [] : ['react'],
     plugins: [],
     output: {
-      dir: dist,
-      format: format,
+      dir: formatDir,
+      format: buildFormat as 'esm' | 'cjs' | 'iife' | 'umd',
       sourcemap: true,
       entryFileNames: '[name].js',
       chunkFileNames: 'chunks/[name]-[hash].js',

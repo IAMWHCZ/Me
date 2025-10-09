@@ -6,7 +6,11 @@
   "type": "module",
   "buildOptions": {
     "name": "Utils",
-    "format": "esm"
+    "format": [
+      "esm",
+      "cjs",
+      "iife"
+    ]
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
