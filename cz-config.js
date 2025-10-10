@@ -1,0 +1,110 @@
+module.exports = {
+  types: [
+    {
+      value: 'feat',
+      name: 'feat:     新功能',
+      emoji: '✨',
+    },
+    {
+      value: 'fix',
+      name: 'fix:      修复bug',
+      emoji: '🐛',
+    },
+    {
+      value: 'docs',
+      name: 'docs:     文档更新',
+      emoji: '📚',
+    },
+    {
+      value: 'style',
+      name: 'style:    代码格式修改（不影响代码运行的变动）',
+      emoji: '💎',
+    },
+    {
+      value: 'refactor',
+      name: 'refactor: 重构（既不是新增功能，也不是修改bug的代码变动）',
+      emoji: '📦',
+    },
+    {
+      value: 'perf',
+      name: 'perf:     性能优化',
+      emoji: '🚀',
+    },
+    {
+      value: 'test',
+      name: 'test:     增加测试',
+      emoji: '🚨',
+    },
+    {
+      value: 'chore',
+      name: 'chore:    构建工具或依赖管理',
+      emoji: '♻️',
+    },
+    {
+      value: 'ci',
+      name: 'ci:       CI配置',
+      emoji: '⚙️',
+    },
+    {
+      value: 'build',
+      name: 'build:    构建相关',
+      emoji: '🛠',
+    },
+    {
+      value: 'revert',
+      name: 'revert:   回滚',
+      emoji: '🗑',
+    },
+    {
+      value: 'wip',
+      name: 'wip:      进行中的工作',
+      emoji: '🚧',
+    },
+  ],
+
+  scopes: [
+    { name: 'root', value: 'root' },
+    { name: 'web', value: 'web' },
+    { name: 'ui', value: 'ui' },
+    { name: 'icons', value: 'icons' },
+    { name: 'shared', value: 'shared' },
+    { name: 'scripts', value: 'scripts' },
+    { name: 'app', value: 'app' },
+    { name: 'components', value: 'components' },
+    { name: 'utils', value: 'utils' },
+    { name: 'types', value: 'types' },
+    { name: 'config', value: 'config' },
+  ],
+
+  allowTicketNumber: false,
+  isTicketNumberRequired: false,
+  ticketNumberPrefix: 'TICKET-',
+  ticketNumberRegExp: '\\d{1,5}',
+
+  messages: {
+    type: '选择你要提交的更改类型:',
+    scope: '此更改的范围是什么（例如组件或文件名）:',
+    customScope: '请输入自定义范围:',
+    subject: '写一个简短的命令式描述（最多84个字符）:\n',
+    body: '提供更详细的更改描述: (使用"|"换行)\n',
+    breaking: '是否有破坏性更改?',
+    breakingBody: '破坏性更改的详细描述:',
+    breakingPrefix: '破坏性更改前缀:',
+    footer: '此更改是否影响任何未解决的问题?',
+    footerPrefixesSelect: '选择问题前缀:',
+    customFooterPrefix: '自定义问题前缀:',
+    footerPrefix: '问题前缀:',
+    confirmCommit: '确认提交?',
+  },
+
+  allowCustomScopes: true,
+  allowBreakingChanges: ['feat', 'fix'],
+  breaklineNumber: 100,
+  breaklineChar: '|',
+  skipQuestions: ['body'],
+  upperCaseSubject: false,
+  defaultScope: '',
+  defaultSubject: '',
+  defaultBody: '',
+  defaultIssues: '',
+}
