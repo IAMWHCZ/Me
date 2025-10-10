@@ -1,7 +1,7 @@
 {
   "name": "@me/icons",
   "version": "1.0.0",
-  "description": "",
+  "description": "Icon components for the Me project",
   "main": "./dist/index.ts",
   "scripts": {
     "dev": "pnpm run clean && pnpm build:svg",
@@ -10,15 +10,20 @@
     "build:svg": "svgr --config-file svgr.config.js --out-dir dist src",
     "clean": "rimraf dist"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "icons",
+    "react",
+    "typescript",
+    "lucide"
+  ],
+  "author": "Zhuo Cheng <cz2545481217@outlook.com>",
+  "license": "MIT",
   "packageManager": "pnpm@10.15.1",
   "peerDependencies": {
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
     "@svgr/cli": "^8.1.0",

@@ -1,7 +1,7 @@
 {
   "name": "@cz/me",
   "version": "1.0.0",
-  "description": "",
+  "description": "A monorepo containing web, mobile, and desktop applications with shared UI components",
   "main": "index.js",
   "scripts": {
     "dev": "turbo dev",
@@ -9,15 +9,32 @@
     "dev:web": "pnpm -F @me/web run dev --open",
     "build": "turbo run build",
     "build:svg": "pnpm run -F @me/icons build:svg",
+    "test": "turbo run test",
+    "test:watch": "turbo run test:watch",
+    "test:coverage": "turbo run test:coverage",
     "format": "prettier **/*.{js,ts,jsx,tsx} --write --ignore-path .gitignore && git update-index --again",
-    "rm:dep": "powershell -NoProfile -NoLogo -Command \"ls -r -dir node_modules | rm -r -fo\"",
-    "rm:dist": "powershell -NoProfile -NoLogo -Command \"ls -r -dir dist | rm -r -fo\"",
+    "rm:dep": "node scripts/rm-dep.js",
+    "rm:dist": "node scripts/rm-dist.js",
     "prepare": "husky",
-    "commit": "git add . && git-cz"
+    "commit": "git add . && git-cz",
+    "changeset": "changeset",
+    "create-changeset": "bash ./scripts/create-changeset.sh",
+    "create-changeset:win": "cmd /c scripts\\create-changeset.bat",
+    "version-packages": "changeset version",
+    "release": "changeset publish",
+    "version-and-release": "changeset version && changeset publish"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "monorepo",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "web",
+    "mobile",
+    "desktop"
+  ],
+  "author": "Zhuo Cheng <cz2545481217@outlook.com>",
+  "license": "MIT",
   "packageManager": "pnpm@10.15.1",
   "config": {
     "commitizen": {
@@ -28,26 +45,28 @@
     }
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.29.7",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^7.0.0",
     "husky": "^9.0.11",
     "lint-staged": "^16.2.3",
     "prettier": "^3.6.2",
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
+    "tsx": "^4.7.0",
     "turbo": "^2.4.1",
-    "typescript": "^5.3.3",
-    "tsx": "^4.7.0"
+    "typescript": "^5.3.3"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
     "tailwindcss": "^4.0.14",
     "tslib": "^2.3.0",
-    "vite": "^6.2.2"
+    "vite": "^7.1.7"
   }
 }
