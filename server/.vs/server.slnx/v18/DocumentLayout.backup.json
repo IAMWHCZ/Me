@@ -1,12 +1,12 @@
 {
-  "Version": 1,
-  "WorkspaceRootPath": "D:\\projects\\Me\\server\\",
-  "Documents": [],
-  "DocumentGroupContainers": [
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "DocumentGroups": []
-    }
-  ]
+	"Version": 1,
+	"WorkspaceRootPath": "D:\\projects\\Me\\server\\",
+	"Documents": [],
+	"DocumentGroupContainers": [
+		{
+			"Orientation": 0,
+			"VerticalTabListWidth": 256,
+			"DocumentGroups": []
+		}
+	]
 }

@@ -18,7 +18,7 @@
     <Import Project="$(NuGetPackageRoot)aspire.dashboard.sdk.osx-arm64/9.2.1/buildTransitive/Aspire.Dashboard.Sdk.osx-arm64.props" Condition="Exists('$(NuGetPackageRoot)aspire.dashboard.sdk.osx-arm64/9.2.1/buildTransitive/Aspire.Dashboard.Sdk.osx-arm64.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgGrpc_Tools Condition=" '$(PkgGrpc_Tools)' == '' ">/Users/cz/.nuget/packages/grpc.tools/2.71.0</PkgGrpc_Tools>
+    <PkgGrpc_Tools Condition=" '$(PkgGrpc_Tools)' == '' ">/Users/cz/.nuget/packages/grpc.tools/2.72.0</PkgGrpc_Tools>
     <PkgAspire_Hosting_Orchestration_osx-arm64 Condition=" '$(PkgAspire_Hosting_Orchestration_osx-arm64)' == '' ">/Users/cz/.nuget/packages/aspire.hosting.orchestration.osx-arm64/9.2.1</PkgAspire_Hosting_Orchestration_osx-arm64>
     <PkgAspire_Dashboard_Sdk_osx-arm64 Condition=" '$(PkgAspire_Dashboard_Sdk_osx-arm64)' == '' ">/Users/cz/.nuget/packages/aspire.dashboard.sdk.osx-arm64/9.2.1</PkgAspire_Dashboard_Sdk_osx-arm64>
   </PropertyGroup>

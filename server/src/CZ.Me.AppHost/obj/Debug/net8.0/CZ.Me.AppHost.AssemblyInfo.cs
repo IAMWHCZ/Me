@@ -23,7 +23,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CZ.Me.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01ac8ab047f0b928758380ab059a55d3209e1a00")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+845ef63cad92c7bc896035721d95373882d4a6a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("CZ.Me.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CZ.Me.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,10 +1,11 @@
-import React from 'react'
-const Button: React.FC<React.ComponentPropsWithRef<'button'>> = (props) => {  
-  return (
-    <button type='button'>
-      Button1
-    </button>
-  )
-}
+import type React from "react";
 
-export default Button
+const Button: React.FC<React.ComponentPropsWithRef<"button">> = (props) => {
+	return (
+		<button type="button" {...props}>
+			Button1
+		</button>
+	);
+};
+
+export default Button;

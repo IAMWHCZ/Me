@@ -1,4 +1,6 @@
 {
-  "**/*.{js,ts,jsx,tsx}": ["prettier --write"],
-  "**/*.{json,md,yml,yaml}": ["prettier --write"]
+	"**/*.{js,ts,jsx,tsx}": [
+		"biome check --fix --unsafe --no-errors-on-unmatched"
+	],
+	"**/*.{json,md,yml,yaml}": ["biome format --write --no-errors-on-unmatched"]
 }

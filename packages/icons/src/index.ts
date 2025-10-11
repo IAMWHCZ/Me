@@ -1,3 +1,3 @@
-import * as LucideReact from 'lucide-react';
+import * as LucideReact from "lucide-react";
 
 export { LucideReact };

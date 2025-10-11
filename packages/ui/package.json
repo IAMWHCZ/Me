@@ -1,68 +1,68 @@
 {
-  "name": "@me/ui",
-  "version": "1.0.0",
-  "description": "UI components library for the Me project",
-  "type": "module",
-  "module": "dist/index.js",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "files": [
-    "dist/"
-  ],
-  "scripts": {
-    "start": "pnpm run dev",
-    "dev": "rollup --config rollup.config.js --watch",
-    "build": "rollup --config rollup.config.js",
-    "test": "vitest",
-    "test:watch": "vitest --watch",
-    "test:coverage": "vitest --coverage",
-    "prepare": "pnpm run build"
-  },
-  "dependencies": {
-    "@me/icons": "workspace:^",
-    "@me/shared": "workspace:^",
-    "lodash-es": "^4.17.21"
-  },
-  "peerDependencies": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "@me/shared": "workspace:^"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.14.5",
-    "@babel/node": "^7.14.5",
-    "@babel/plugin-proposal-object-rest-spread": "^7.14.5",
-    "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
-    "@babel/plugin-transform-react-jsx": "^7.14.5",
-    "@babel/plugin-transform-runtime": "^7.14.5",
-    "@babel/preset-env": "^7.14.5",
-    "@babel/preset-react": "^7.14.5",
-    "@babel/runtime": "^7.14.5",
-    "@rollup/plugin-babel": "^5.3.0",
-    "@rollup/plugin-commonjs": "^21.0.1",
-    "@rollup/plugin-node-resolve": "^13.1.1",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.2.0",
-    "@types/jest": "^29.5.14",
-    "@types/lodash-es": "^4.17.5",
-    "@vitest/coverage-v8": "^2.1.8",
-    "jsdom": "^26.0.0",
-    "postcss": "^8.4.5",
-    "rollup": "^2.60.2",
-    "rollup-plugin-dts": "^6.1.1",
-    "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-typescript2": "^0.31.1",
-    "tslib": "^2.3.0",
-    "vitest": "^2.1.8"
-  },
-  "keywords": [
-    "ui",
-    "components",
-    "react",
-    "typescript",
-    "tailwindcss"
-  ],
-  "author": "Zhuo Cheng <cz2545481217@outlook.com>",
-  "license": "MIT",
-  "packageManager": "pnpm@10.15.1"
+	"name": "@me/ui",
+	"version": "1.0.0",
+	"description": "UI components library for the Me project",
+	"type": "module",
+	"module": "dist/index.js",
+	"main": "dist/index.js",
+	"typings": "dist/index.d.ts",
+	"files": [
+		"dist/"
+	],
+	"scripts": {
+		"start": "pnpm run dev",
+		"dev": "rollup --config rollup.config.js --watch",
+		"build": "rollup --config rollup.config.js",
+		"test": "vitest",
+		"test:watch": "vitest --watch",
+		"test:coverage": "vitest --coverage",
+		"prepare": "pnpm run build"
+	},
+	"dependencies": {
+		"@me/icons": "workspace:^",
+		"@me/shared": "workspace:^",
+		"lodash-es": "^4.17.21"
+	},
+	"peerDependencies": {
+		"react": "19.1.0",
+		"react-dom": "19.1.0",
+		"@me/shared": "workspace:^"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.14.5",
+		"@babel/node": "^7.14.5",
+		"@babel/plugin-proposal-object-rest-spread": "^7.14.5",
+		"@babel/plugin-syntax-object-rest-spread": "^7.8.3",
+		"@babel/plugin-transform-react-jsx": "^7.14.5",
+		"@babel/plugin-transform-runtime": "^7.14.5",
+		"@babel/preset-env": "^7.14.5",
+		"@babel/preset-react": "^7.14.5",
+		"@babel/runtime": "^7.14.5",
+		"@rollup/plugin-babel": "^5.3.0",
+		"@rollup/plugin-commonjs": "^21.0.1",
+		"@rollup/plugin-node-resolve": "^13.1.1",
+		"@testing-library/jest-dom": "^6.6.3",
+		"@testing-library/react": "^16.2.0",
+		"@types/jest": "^29.5.14",
+		"@types/lodash-es": "^4.17.5",
+		"@vitest/coverage-v8": "^2.1.8",
+		"jsdom": "^26.0.0",
+		"postcss": "^8.4.5",
+		"rollup": "^2.60.2",
+		"rollup-plugin-dts": "^6.1.1",
+		"rollup-plugin-postcss": "^4.0.2",
+		"rollup-plugin-typescript2": "^0.31.1",
+		"tslib": "^2.3.0",
+		"vitest": "^2.1.8"
+	},
+	"keywords": [
+		"ui",
+		"components",
+		"react",
+		"typescript",
+		"tailwindcss"
+	],
+	"author": "Zhuo Cheng <cz2545481217@outlook.com>",
+	"license": "MIT",
+	"packageManager": "pnpm@10.15.1"
 }
