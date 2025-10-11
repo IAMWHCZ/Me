@@ -1,1 +1,6 @@
-<Solution />
+<Solution>
+  <Folder Name="/shared/">
+    <Project Path="src\shared\CZ.Me.ServiceDefaults\CZ.Me.ServiceDefaults.csproj" Type="Classic C#" />
+  </Folder>
+  <Project Path="src\CZ.Me.AppHost\CZ.Me.AppHost.csproj" Type="Classic C#" />
+</Solution>

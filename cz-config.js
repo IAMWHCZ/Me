@@ -74,6 +74,7 @@ module.exports = {
     { name: 'utils', value: 'utils' },
     { name: 'types', value: 'types' },
     { name: 'config', value: 'config' },
+    { name: 'server', value: 'server' },
   ],
 
   allowTicketNumber: false,

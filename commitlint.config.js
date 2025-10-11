@@ -38,6 +38,7 @@ module.exports = {
         'utils', // 工具函数
         'types', // 类型定义
         'config', // 配置文件
+        'server',
       ],
     ],
     'scope-case': [2, 'always', 'lower-case'],
