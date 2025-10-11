@@ -23,6 +23,10 @@ builder
 	.WithEnvironment("KC_DB_PASSWORD", sqlServerPassword)
 	.WithEnvironment("KC_DB_URL", "jdbc:sqlserver://mssql:1433;databaseName=KeycloakHub;encrypt=true;trustServerCertificate=true");
 
+builder.AddProject<Projects.CZ_Me_WebApi>("me-webapi")
+	.WithExternalHttpEndpoints()
+	.WaitFor(keycloakDb);
+
 await builder
 	.Build()
 	.RunAsync();

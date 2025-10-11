@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/host/">
+    <Project Path="src\host\CZ.Me.WebApi\CZ.Me.WebApi.csproj" Type="Classic C#" />
+  </Folder>
   <Folder Name="/shared/">
     <Project Path="src\shared\CZ.Me.ServiceDefaults\CZ.Me.ServiceDefaults.csproj" Type="Classic C#" />
   </Folder>

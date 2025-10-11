@@ -15,5 +15,10 @@
         <PackageReference Include="Aspire.Hosting.Keycloak" Version="9.5.1-preview.1.25502.11" />
         <PackageReference Include="Aspire.Hosting.SqlServer" Version="9.5.1" />
     </ItemGroup>
+	
+	<ItemGroup>
+		<ProjectReference Include="..\host\CZ.Me.WebApi\CZ.Me.WebApi.csproj" />
+	</ItemGroup>
+	
 
 </Project>
