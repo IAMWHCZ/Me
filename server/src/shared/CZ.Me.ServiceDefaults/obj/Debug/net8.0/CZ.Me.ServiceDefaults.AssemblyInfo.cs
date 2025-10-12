@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CZ.Me.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+063ac2d2dd658c90a105ed9853ecbe199dfb8539")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2fe34502826b782102243e7507a13fb625fbd966")]
 [assembly: System.Reflection.AssemblyProductAttribute("CZ.Me.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CZ.Me.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

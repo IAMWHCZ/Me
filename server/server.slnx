@@ -1,9 +1,20 @@
 <Solution>
+  <Folder Name="/application/">
+    <Project Path="src\application\CZ.Me.Application\CZ.Me.Application.csproj" Type="Classic C#" />
+  </Folder>
+  <Folder Name="/domain/">
+    <Project Path="src\domain\CZ.Me.Domain\CZ.Me.Domain.csproj" Type="Classic C#" />
+  </Folder>
   <Folder Name="/host/">
+    <Project Path="src\host\CZ.Me.AppHost\CZ.Me.AppHost.csproj" Type="Classic C#" />
     <Project Path="src\host\CZ.Me.WebApi\CZ.Me.WebApi.csproj" Type="Classic C#" />
   </Folder>
+  <Folder Name="/infrastructure/">
+    <Project Path="src\infrastructures\CZ.Me.External\CZ.Me.External.csproj" Type="Classic C#" />
+    <Project Path="src\infrastructures\CZ.Me.Persistence\CZ.Me.Persistence.csproj" Type="Classic C#" />
+  </Folder>
   <Folder Name="/shared/">
+    <Project Path="src\shared\CZ.Me.Core\CZ.Me.Core.csproj" Type="Classic C#" />
     <Project Path="src\shared\CZ.Me.ServiceDefaults\CZ.Me.ServiceDefaults.csproj" Type="Classic C#" />
   </Folder>
-  <Project Path="src\CZ.Me.AppHost\CZ.Me.AppHost.csproj" Type="Classic C#" />
 </Solution>

@@ -13,6 +13,8 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\application\CZ.Me.Application\CZ.Me.Application.csproj" />
+      <ProjectReference Include="..\..\infrastructures\CZ.Me.Persistence\CZ.Me.Persistence.csproj" />
       <ProjectReference Include="..\..\shared\CZ.Me.ServiceDefaults\CZ.Me.ServiceDefaults.csproj" />
     </ItemGroup>
 

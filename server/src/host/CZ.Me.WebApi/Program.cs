@@ -12,13 +12,15 @@ builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddAuthorization();
+
 builder.Services.AddAuthentication()
 	.AddKeycloakJwtBearer(
 		serviceName: "keycloak",
-		realm: "api",
+		realm: "cheng-zhuo",
 		options =>
 		{
-			options.Audience = "store.api";
+			options.Audience = "account";
 			if (builder.Environment.IsDevelopment())
 			{
 				options.RequireHttpsMetadata = false;
@@ -38,5 +40,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.MapControllers();
+
+app.UseAuthentication();
+
+app.UseAuthorization();
 
 await app.RunAsync();

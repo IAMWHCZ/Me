@@ -13,7 +13,7 @@ var keycloakDb = sqlServer
 var keycloakUsername = builder.AddParameter("keycloak-username");
 var keycloakPassword = builder.AddParameter("keycloak-password", secret: false);
 
-builder
+var keycloak = builder
 	.AddKeycloak("keycloak",6060, keycloakUsername, keycloakPassword)
 	.WithDataVolume("keycloak-data")
 	.WaitFor(keycloakDb)
@@ -21,10 +21,12 @@ builder
 	.WithEnvironment("KC_DB", "mssql")
 	.WithEnvironment("KC_DB_USERNAME", "sa")
 	.WithEnvironment("KC_DB_PASSWORD", sqlServerPassword)
-	.WithEnvironment("KC_DB_URL", "jdbc:sqlserver://mssql:1433;databaseName=KeycloakHub;encrypt=true;trustServerCertificate=true");
+	.WithEnvironment("KC_DB_URL", "jdbc:sqlserver://mssql:1433;databaseName=KeycloakHub;encrypt=true;trustServerCertificate=true")
+	.WithExternalHttpEndpoints();
 
 builder.AddProject<Projects.CZ_Me_WebApi>("me-webapi")
 	.WithExternalHttpEndpoints()
+	.WithReference(keycloak)
 	.WaitFor(keycloakDb);
 
 await builder
