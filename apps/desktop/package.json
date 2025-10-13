@@ -42,6 +42,5 @@
 			"esbuild"
 		]
 	},
-	"license": "MIT",
-	"__npminstall_done": false
+	"license": "MIT"
 }

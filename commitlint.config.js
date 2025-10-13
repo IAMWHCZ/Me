@@ -16,7 +16,9 @@ module.exports = {
 				"ci", // CI配置 ⚙️
 				"build", // 构建相关 🛠
 				"revert", // 回滚 🗑
-				"wip", // 进行中的工作 🚧
+				"wip",
+				"server",
+				"sso", // 进行中的工作 🚧
 			],
 		],
 		"type-case": [2, "always", "lower-case"],
@@ -39,6 +41,7 @@ module.exports = {
 				"types", // 类型定义
 				"config", // 配置文件
 				"server",
+				"sso",
 			],
 		],
 		"scope-case": [2, "always", "lower-case"],

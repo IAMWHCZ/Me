@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Out - MyBlog</title>
+    <link rel="stylesheet" href="./icons.css" />
+    <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="signout-container">
+            <div class="logo">
+                <img src="./icons/blog.svg" class="icon icon-blog" alt="Blog icon">
+                <span data-lang="brand-name">MyBlog</span>
+            </div>
+            
+            <div class="signout-card">
+                <div class="signout-icon">
+                    <img src="./icons/sign-out.svg" class="icon icon-sign-out" alt="Sign out icon">
+                </div>
+                
+                <h1 data-lang="signout-title">Sign Out</h1>
+                <p data-lang="signout-message">Are you sure you want to sign out of your account?</p>
+                
+                <div class="signout-actions">
+                    <button id="confirmSignout" class="btn btn-primary" data-lang="confirm-signout">Sign Out</button>
+                    <button id="cancelSignout" class="btn btn-secondary" data-lang="cancel">Cancel</button>
+                </div>
+                
+                <div class="signout-info">
+                    <p data-lang="signed-in-as">Signed in as:</p>
+                    <p class="user-email">user@example.com</p>
+                </div>
+            </div>
+            
+            <div class="controls-switcher">
+                <button id="langToggle" class="toggle-btn" data-lang="lang-toggle">EN</button>
+                <button id="themeToggle" class="toggle-btn">
+                    <img src="./icons/sun.svg" class="icon icon-sun" alt="Theme toggle">
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="notification" class="notification"></div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

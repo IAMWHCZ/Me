@@ -75,6 +75,7 @@ module.exports = {
 		{ name: "types", value: "types" },
 		{ name: "config", value: "config" },
 		{ name: "server", value: "server" },
+		{ name: "sso", value: "sso" },
 	],
 
 	allowTicketNumber: false,
