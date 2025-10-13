@@ -22,6 +22,16 @@ document.addEventListener("DOMContentLoaded", () => {
 				"Join the community to read articles, explore projects, and share your thoughts with others.",
 			"fill-fields": "Please fill in all fields",
 			"valid-email": "Please enter a valid email address",
+			"email-required": "Email address is required",
+			"password-required": "Password is required",
+			"password-min-length": "Password must be at least 8 characters",
+			"password-uppercase":
+				"Password must contain at least one uppercase letter",
+			"password-lowercase":
+				"Password must contain at least one lowercase letter",
+			"password-number": "Password must contain at least one number",
+			"password-special":
+				"Password must contain at least one special character",
 			"login-success": "Login successful! Redirecting...",
 			"google-login": "Redirecting to Google login...",
 			"github-login": "Redirecting to GitHub login...",
@@ -49,6 +59,13 @@ document.addEventListener("DOMContentLoaded", () => {
 			"discover-subtitle": "加入社区，阅读文章，探索项目，与他人分享您的想法。",
 			"fill-fields": "请填写所有字段",
 			"valid-email": "请输入有效的电子邮箱地址",
+			"email-required": "电子邮箱地址不能为空",
+			"password-required": "密码不能为空",
+			"password-min-length": "密码长度至少为8个字符",
+			"password-uppercase": "密码必须包含至少一个大写字母",
+			"password-lowercase": "密码必须包含至少一个小写字母",
+			"password-number": "密码必须包含至少一个数字",
+			"password-special": "密码必须包含至少一个特殊字符",
 			"login-success": "登录成功！正在重定向...",
 			"google-login": "正在重定向到谷歌登录...",
 			"github-login": "正在重定向到GitHub登录...",
@@ -228,9 +245,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	// Toggle password visibility
 	const togglePassword = document.getElementById("togglePassword");
-	const passwordInput = document.getElementById("password");
 
 	togglePassword.addEventListener("click", function () {
+		const passwordInput = document.getElementById("password");
 		const type =
 			passwordInput.getAttribute("type") === "password" ? "text" : "password";
 		passwordInput.setAttribute("type", type);
@@ -252,26 +269,159 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	// Handle form submission
 	const loginForm = document.getElementById("loginForm");
+	const emailInput = document.getElementById("email");
+	const passwordInput = document.getElementById("password");
+	const emailError = document.getElementById("email-error");
+	const passwordError = document.getElementById("password-error");
+
+	// Real-time validation
+	emailInput.addEventListener("blur", validateEmail);
+	emailInput.addEventListener("input", clearEmailError);
+	passwordInput.addEventListener("blur", validatePassword);
+	passwordInput.addEventListener("input", clearPasswordError);
+
+	// Email validation function
+	function validateEmail() {
+		const email = emailInput.value.trim();
+		const emailGroup = emailInput.closest(".form-group");
+
+		if (!email) {
+			showFieldError(
+				emailGroup,
+				emailError,
+				translations[currentLang]["email-required"],
+			);
+			return false;
+		}
+
+		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		if (!emailRegex.test(email)) {
+			showFieldError(
+				emailGroup,
+				emailError,
+				translations[currentLang]["valid-email"],
+			);
+			return false;
+		}
+
+		clearFieldError(emailGroup, emailError);
+		return true;
+	}
+
+	// Password validation function
+	function validatePassword() {
+		const password = passwordInput.value;
+		const passwordGroup = passwordInput.closest(".form-group");
+
+		if (!password) {
+			showFieldError(
+				passwordGroup,
+				passwordError,
+				translations[currentLang]["password-required"],
+			);
+			return false;
+		}
+
+		if (password.length < 8) {
+			showFieldError(
+				passwordGroup,
+				passwordError,
+				translations[currentLang]["password-min-length"],
+			);
+			return false;
+		}
+
+		// Check for uppercase letter
+		if (!/[A-Z]/.test(password)) {
+			showFieldError(
+				passwordGroup,
+				passwordError,
+				translations[currentLang]["password-uppercase"],
+			);
+			return false;
+		}
+
+		// Check for lowercase letter
+		if (!/[a-z]/.test(password)) {
+			showFieldError(
+				passwordGroup,
+				passwordError,
+				translations[currentLang]["password-lowercase"],
+			);
+			return false;
+		}
+
+		// Check for number
+		if (!/[0-9]/.test(password)) {
+			showFieldError(
+				passwordGroup,
+				passwordError,
+				translations[currentLang]["password-number"],
+			);
+			return false;
+		}
+
+		// Check for special character
+		if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+			showFieldError(
+				passwordGroup,
+				passwordError,
+				translations[currentLang]["password-special"],
+			);
+			return false;
+		}
+
+		clearFieldError(passwordGroup, passwordError);
+		return true;
+	}
+
+	// Show field error
+	function showFieldError(fieldGroup, errorElement, message) {
+		fieldGroup.classList.add("error");
+		const input = fieldGroup.querySelector("input");
+		input.classList.add("error");
+		errorElement.textContent = message;
+	}
+
+	// Clear field error
+	function clearFieldError(fieldGroup, errorElement) {
+		fieldGroup.classList.remove("error");
+		const input = fieldGroup.querySelector("input");
+		input.classList.remove("error");
+		errorElement.textContent = "";
+	}
+
+	// Clear email error on input
+	function clearEmailError() {
+		const emailGroup = emailInput.closest(".form-group");
+		if (emailGroup.classList.contains("error")) {
+			clearFieldError(emailGroup, emailError);
+		}
+	}
+
+	// Clear password error on input
+	function clearPasswordError() {
+		const passwordGroup = passwordInput.closest(".form-group");
+		if (passwordGroup.classList.contains("error")) {
+			clearFieldError(passwordGroup, passwordError);
+		}
+	}
+
 	loginForm.addEventListener("submit", (e) => {
 		e.preventDefault();
 
+		// Validate all fields
+		const isEmailValid = validateEmail();
+		const isPasswordValid = validatePassword();
+
+		if (!isEmailValid || !isPasswordValid) {
+			return;
+		}
+
 		// Get form values
-		const email = document.getElementById("email").value;
-		const password = document.getElementById("password").value;
+		const _email = emailInput.value;
+		const _password = passwordInput.value;
 		const _remember = document.getElementById("remember").checked;
-
-		// Simple validation
-		if (!email || !password) {
-			showNotification(translations[currentLang]["fill-fields"], "error");
-			return;
-		}
-
-		// Email validation
-		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-		if (!emailRegex.test(email)) {
-			showNotification(translations[currentLang]["valid-email"], "error");
-			return;
-		}
 
 		// Simulate login process
 		const loginButton = document.querySelector(".login-button");

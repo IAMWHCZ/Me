@@ -29,6 +29,8 @@ builder.AddProject<Projects.CZ_Me_WebApi>("me-webapi")
 	.WithReference(keycloak)
 	.WaitFor(keycloakDb);
 
+builder.AddProject<Projects.CZ_SSO_Web>("cz-sso-web");
+
 await builder
 	.Build()
 	.RunAsync();

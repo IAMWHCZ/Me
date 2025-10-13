@@ -2197,24 +2197,32 @@
     ]
   },
   "packageFolders": {
-    "/Users/cz/.nuget/packages/": {}
+    "C:\\Users\\cheng_zhuo\\.nuget\\packages\\": {},
+    "D:\\softwares\\VisualStudio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cz/Project/Me/server/src/shared/CZ.Me.ServiceDefaults/CZ.Me.ServiceDefaults.csproj",
+      "projectUniqueName": "D:\\projects\\Me\\server\\src\\shared\\CZ.Me.ServiceDefaults\\CZ.Me.ServiceDefaults.csproj",
       "projectName": "CZ.Me.ServiceDefaults",
-      "projectPath": "/Users/cz/Project/Me/server/src/shared/CZ.Me.ServiceDefaults/CZ.Me.ServiceDefaults.csproj",
-      "packagesPath": "/Users/cz/.nuget/packages/",
-      "outputPath": "/Users/cz/Project/Me/server/src/shared/CZ.Me.ServiceDefaults/obj/",
+      "projectPath": "D:\\projects\\Me\\server\\src\\shared\\CZ.Me.ServiceDefaults\\CZ.Me.ServiceDefaults.csproj",
+      "packagesPath": "C:\\Users\\cheng_zhuo\\.nuget\\packages\\",
+      "outputPath": "D:\\projects\\Me\\server\\src\\shared\\CZ.Me.ServiceDefaults\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\softwares\\VisualStudio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/cz/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\cheng_zhuo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2233,7 +2241,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -2287,7 +2295,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.1.25451.107/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
