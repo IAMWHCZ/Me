@@ -7,7 +7,7 @@ public static class ServiceCollectionExtensions
 {
 	public static IServiceCollection AddMePersistence(this IServiceCollection services)
 	{
-		services.AddSingleton<UserDbContext>();
+		services.AddSingleton<DbContext>();
 		
 		return services;
 	}

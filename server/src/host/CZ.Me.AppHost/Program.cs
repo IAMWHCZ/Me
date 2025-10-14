@@ -3,7 +3,7 @@ var builder = DistributedApplication.CreateBuilder(args);
 var sqlServerPassword = builder.AddParameter("sqlserver-password", secret: false);
 var sqlServer = builder.AddSqlServer("mssql", sqlServerPassword, 1433)
 	.WithDataVolume("mssql-data");
-			
+
 var userHubDb = sqlServer
 	.AddDatabase("UserHub");
 
@@ -14,7 +14,7 @@ var keycloakUsername = builder.AddParameter("keycloak-username");
 var keycloakPassword = builder.AddParameter("keycloak-password", secret: false);
 
 var keycloak = builder
-	.AddKeycloak("keycloak",6060, keycloakUsername, keycloakPassword)
+	.AddKeycloak("keycloak", 6060, keycloakUsername, keycloakPassword)
 	.WithDataVolume("keycloak-data")
 	.WaitFor(keycloakDb)
 	.WithEnvironment("KC_DB_VENDOR", "mssql")
@@ -29,7 +29,7 @@ builder.AddProject<Projects.CZ_Me_WebApi>("me-webapi")
 	.WithReference(keycloak)
 	.WaitFor(keycloakDb);
 
-builder.AddProject<Projects.CZ_SSO_Web>("cz-sso-web");
+builder.AddProject<Projects.CZ_Me_SSO>("cz-me-sso");
 
 await builder
 	.Build()

@@ -1,1 +1,15 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🔍 Running lint-staged..."
 npx lint-staged
+
+echo "🔨 Building backend..."
+cd server
+dotnet build
+if [ $? -ne 0 ]; then
+  echo "❌ Backend build failed. Please fix the errors before committing."
+  exit 1
+fi
+
+echo "✅ Backend build successful. Commit can proceed."

@@ -3,48 +3,16 @@
   "WorkspaceRootPath": "D:\\projects\\Me\\server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|d:\\projects\\me\\server\\src\\host\\cz.sso.web\\components\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|solutionrelative:src\\host\\cz.sso.web\\components\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0EB7BCBF-0B5D-152D-F684-284847520112}|src\\host\\CZ.Me.SSO\\CZ.Me.SSO.csproj|d:\\projects\\me\\server\\src\\host\\cz.me.sso\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EB7BCBF-0B5D-152D-F684-284847520112}|src\\host\\CZ.Me.SSO\\CZ.Me.SSO.csproj|solutionrelative:src\\host\\cz.me.sso\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|d:\\projects\\me\\server\\src\\host\\cz.sso.web\\components\\sso\\signincomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|solutionrelative:src\\host\\cz.sso.web\\components\\sso\\signincomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7F508F4D-6272-7D94-F9F4-A53756EBBA29}|src\\host\\CZ.Me.AppHost\\CZ.Me.AppHost.csproj|d:\\projects\\me\\server\\src\\host\\cz.me.apphost\\cz.me.apphost.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7F508F4D-6272-7D94-F9F4-A53756EBBA29}|src\\host\\CZ.Me.AppHost\\CZ.Me.AppHost.csproj|solutionrelative:src\\host\\cz.me.apphost\\cz.me.apphost.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|d:\\projects\\me\\server\\src\\host\\cz.sso.web\\components\\sso\\signoutcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|solutionrelative:src\\host\\cz.sso.web\\components\\sso\\signoutcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|d:\\projects\\me\\server\\src\\host\\cz.sso.web\\components\\pages\\signin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|solutionrelative:src\\host\\cz.sso.web\\components\\pages\\signin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|d:\\projects\\me\\server\\src\\host\\cz.sso.web\\wwwroot\\ssostyles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|solutionrelative:src\\host\\cz.sso.web\\wwwroot\\ssostyles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|d:\\projects\\me\\server\\src\\host\\cz.sso.web\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|solutionrelative:src\\host\\cz.sso.web\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|d:\\projects\\me\\server\\src\\host\\cz.sso.web\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|solutionrelative:src\\host\\cz.sso.web\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|d:\\projects\\me\\server\\src\\host\\cz.sso.web\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|solutionrelative:src\\host\\cz.sso.web\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|d:\\projects\\me\\server\\src\\host\\cz.sso.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|solutionrelative:src\\host\\cz.sso.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|d:\\projects\\me\\server\\src\\host\\cz.sso.web\\components\\pages\\signout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|solutionrelative:src\\host\\cz.sso.web\\components\\pages\\signout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|d:\\projects\\me\\server\\src\\host\\cz.sso.web\\wwwroot\\favicon.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
-      "RelativeMoniker": "D:0:0:{7F6FADCE-3631-B548-60E9-AE3F17B459F7}|src\\host\\CZ.SSO.Web\\CZ.SSO.Web.csproj|solutionrelative:src\\host\\cz.sso.web\\wwwroot\\favicon.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+      "AbsoluteMoniker": "D:0:0:{7F508F4D-6272-7D94-F9F4-A53756EBBA29}|src\\host\\CZ.Me.AppHost\\CZ.Me.AppHost.csproj|d:\\projects\\me\\server\\src\\host\\cz.me.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F508F4D-6272-7D94-F9F4-A53756EBBA29}|src\\host\\CZ.Me.AppHost\\CZ.Me.AppHost.csproj|solutionrelative:src\\host\\cz.me.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -57,145 +25,46 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SignOutComponent.razor",
-              "DocumentMoniker": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\Components\\SSO\\SignOutComponent.razor",
-              "RelativeDocumentMoniker": "src\\host\\CZ.SSO.Web\\Components\\SSO\\SignOutComponent.razor",
-              "ToolTip": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\Components\\SSO\\SignOutComponent.razor",
-              "RelativeToolTip": "src\\host\\CZ.SSO.Web\\Components\\SSO\\SignOutComponent.razor",
-              "ViewState": "AgIAAJAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-13T12:04:34.866Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.razor",
-              "DocumentMoniker": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\Components\\Pages\\Index.razor",
-              "RelativeDocumentMoniker": "src\\host\\CZ.SSO.Web\\Components\\Pages\\Index.razor",
-              "ToolTip": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\Components\\Pages\\Index.razor",
-              "RelativeToolTip": "src\\host\\CZ.SSO.Web\\Components\\Pages\\Index.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-13T11:57:40.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SSOStyles.css",
-              "DocumentMoniker": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\wwwroot\\SSOStyles.css",
-              "RelativeDocumentMoniker": "src\\host\\CZ.SSO.Web\\wwwroot\\SSOStyles.css",
-              "ToolTip": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\wwwroot\\SSOStyles.css",
-              "RelativeToolTip": "src\\host\\CZ.SSO.Web\\wwwroot\\SSOStyles.css",
-              "ViewState": "AgIAACsAAAAAAAAAAAA3wDwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-13T11:36:53.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Routes.razor",
-              "DocumentMoniker": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\Components\\Routes.razor",
-              "RelativeDocumentMoniker": "src\\host\\CZ.SSO.Web\\Components\\Routes.razor",
-              "ToolTip": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\Components\\Routes.razor",
-              "RelativeToolTip": "src\\host\\CZ.SSO.Web\\Components\\Routes.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-13T11:35:56.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "App.razor",
-              "DocumentMoniker": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\Components\\App.razor",
-              "RelativeDocumentMoniker": "src\\host\\CZ.SSO.Web\\Components\\App.razor",
-              "ToolTip": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\Components\\App.razor",
-              "RelativeToolTip": "src\\host\\CZ.SSO.Web\\Components\\App.razor",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-13T11:35:33.076Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\Program.cs",
-              "RelativeDocumentMoniker": "src\\host\\CZ.SSO.Web\\Program.cs",
-              "ToolTip": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\Program.cs",
-              "RelativeToolTip": "src\\host\\CZ.SSO.Web\\Program.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA6wBUAAAABAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\projects\\Me\\server\\src\\host\\CZ.Me.SSO\\Program.cs",
+              "RelativeDocumentMoniker": "src\\host\\CZ.Me.SSO\\Program.cs",
+              "ToolTip": "D:\\projects\\Me\\server\\src\\host\\CZ.Me.SSO\\Program.cs",
+              "RelativeToolTip": "src\\host\\CZ.Me.SSO\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T09:53:42.346Z",
+              "WhenOpened": "2025-10-14T03:25:58.128Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SignInComponent.razor",
-              "DocumentMoniker": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\Components\\SSO\\SignInComponent.razor",
-              "RelativeDocumentMoniker": "src\\host\\CZ.SSO.Web\\Components\\SSO\\SignInComponent.razor",
-              "ToolTip": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\Components\\SSO\\SignInComponent.razor",
-              "RelativeToolTip": "src\\host\\CZ.SSO.Web\\Components\\SSO\\SignInComponent.razor",
-              "ViewState": "AgIAAMMAAAAAAAAAAAA6wMwAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-13T10:15:28.69Z",
+              "Title": "CZ.Me.AppHost",
+              "DocumentMoniker": "D:\\projects\\Me\\server\\src\\host\\CZ.Me.AppHost\\CZ.Me.AppHost.csproj",
+              "RelativeDocumentMoniker": "src\\host\\CZ.Me.AppHost\\CZ.Me.AppHost.csproj",
+              "ToolTip": "D:\\projects\\Me\\server\\src\\host\\CZ.Me.AppHost\\CZ.Me.AppHost.csproj",
+              "RelativeToolTip": "src\\host\\CZ.Me.AppHost\\CZ.Me.AppHost.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwkAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-14T03:14:22.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\Components\\_Imports.razor",
-              "RelativeDocumentMoniker": "src\\host\\CZ.SSO.Web\\Components\\_Imports.razor",
-              "ToolTip": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\Components\\_Imports.razor",
-              "RelativeToolTip": "src\\host\\CZ.SSO.Web\\Components\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-13T11:38:19.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Signin.razor",
-              "DocumentMoniker": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\Components\\Pages\\Signin.razor",
-              "RelativeDocumentMoniker": "src\\host\\CZ.SSO.Web\\Components\\Pages\\Signin.razor",
-              "ToolTip": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\Components\\Pages\\Signin.razor",
-              "RelativeToolTip": "src\\host\\CZ.SSO.Web\\Components\\Pages\\Signin.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-13T11:41:41.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "favicon.png",
-              "DocumentMoniker": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\wwwroot\\favicon.png",
-              "RelativeDocumentMoniker": "src\\host\\CZ.SSO.Web\\wwwroot\\favicon.png",
-              "ToolTip": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\wwwroot\\favicon.png",
-              "RelativeToolTip": "src\\host\\CZ.SSO.Web\\wwwroot\\favicon.png",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-10-13T11:36:54.995Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Signout.razor",
-              "DocumentMoniker": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\Components\\Pages\\Signout.razor",
-              "RelativeDocumentMoniker": "src\\host\\CZ.SSO.Web\\Components\\Pages\\Signout.razor",
-              "ToolTip": "D:\\projects\\Me\\server\\src\\host\\CZ.SSO.Web\\Components\\Pages\\Signout.razor",
-              "RelativeToolTip": "src\\host\\CZ.SSO.Web\\Components\\Pages\\Signout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwIAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-13T11:41:42.502Z",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\projects\\Me\\server\\src\\host\\CZ.Me.AppHost\\Program.cs",
+              "RelativeDocumentMoniker": "src\\host\\CZ.Me.AppHost\\Program.cs",
+              "ToolTip": "D:\\projects\\Me\\server\\src\\host\\CZ.Me.AppHost\\Program.cs",
+              "RelativeToolTip": "src\\host\\CZ.Me.AppHost\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T03:09:40.954Z",
               "EditorCaption": ""
             }
           ]

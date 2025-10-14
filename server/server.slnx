@@ -6,7 +6,7 @@
     <Project Path="src\domain\CZ.Me.Domain\CZ.Me.Domain.csproj" />
   </Folder>
   <Folder Name="/host/">
-    <Project Path="src/host/CZ.SSO.Web/CZ.SSO.Web.csproj" />
+    <Project Path="src/host/CZ.Me.SSO/CZ.Me.SSO.csproj" />
     <Project Path="src\host\CZ.Me.AppHost\CZ.Me.AppHost.csproj" />
     <Project Path="src\host\CZ.Me.WebApi\CZ.Me.WebApi.csproj" />
   </Folder>

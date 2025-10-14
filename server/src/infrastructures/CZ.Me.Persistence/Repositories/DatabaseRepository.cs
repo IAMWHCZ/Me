@@ -4,7 +4,7 @@ using CZ.Me.Persistence.Contexts;
 
 namespace CZ.Me.Persistence.Repositories;
 
-public class DatabaseRepository(DbContext dbContext,): IDatabaseRepository
+public class DatabaseRepository: IDatabaseRepository
 {
 	public Task<IEnumerable<T>> QueryAsync<T>(string sql, object param = null, IDbTransaction transaction = null,
 		int? commandTimeout = null, CommandType? commandType = null)

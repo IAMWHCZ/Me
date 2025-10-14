@@ -17,8 +17,8 @@
     </ItemGroup>
 	
 	<ItemGroup>
-		<ProjectReference Include="..\CZ.SSO.Web\CZ.SSO.Web.csproj" />
-		<ProjectReference Include="..\host\CZ.Me.WebApi\CZ.Me.WebApi.csproj" />
+		<ProjectReference Include="..\CZ.Me.SSO\CZ.Me.SSO.csproj" />
+		<ProjectReference Include="..\CZ.Me.WebApi\CZ.Me.WebApi.csproj" />
 	</ItemGroup>
 	
 
